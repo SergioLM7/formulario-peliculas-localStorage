@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de películas</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h2>Formulario de películas</h2>
+        <section id="formularioPeliculas">
+        <form action="/action_page.php" method ="get" id="formPeliculas">
+            <label for="titulo">
+                Título:
+                <input type ="text" name="titulo" id="titulo"/>
+            </label>
+            <label>
+                Director:
+                <input type ="text" name="director" id="director"/>
+            </label>
+            <label>
+                Año:
+                <input type ="number" name="año" id="año"/>
+            </label>
+            <label for="genero">
+                Género:
+                <select name ='genero' id="genero">
+                    
+                </select>
+            </label>
+            <button type="submit" id='botonEnvio' value="Enviar" form="formPeliculas" formmethod="get">Enviar</button>
+        </form>
+        </section>
+        <section id="seccionFiltro">
+        <label for="filtro">
+            <select name="filtro" id="filtro" disabled>
+             
+            
+            </select>
+        </label>
+        </section>
+        <section id="tabla1">
+            <table id="tabla" name="tabla">
+                <thead>
+                    <tr id="encabezados">
+                        <th>Título</th>
+                        <th>Director</th>
+                        <th>Año</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+        
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
